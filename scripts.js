@@ -21,9 +21,11 @@ request.onload = function () {
           
             const title = document.createElement('h2');
             title.textContent = data[key].title;
+            title.setAttribute('class', 'text-uppercase font-weight-bold');
 
             const text = document.createElement('p');
             text.textContent = data[key].text;
+            text.setAttribute('class', 'font-weight-light');
 
             const image = document.createElement('img');
             image.setAttribute('src', data[key].image);

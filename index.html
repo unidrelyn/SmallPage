@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="container-fluid top-header">
+    <div class="container-fluid top-header" id="header">
         <div class="header">
             <nav class="navbar navbar-expand-lg navbar-ligh float-right">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item mx-10"><a class="nav-link text-white" href="#">Page 1</a></li>
-                        <li class="nav-item mx-20"><a class="nav-link text-white" href="#">Page 2</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#">Page 3</a></li>
+                    <ul class="nav">
+                        <li class="nav-item mx-10"><a class="nav-link text-white" href="#page1">Page 1</a></li>
+                        <li class="nav-item mx-20"><a class="nav-link text-white" href="#page2">Page 2</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#page3">Page 3</a></li>
                         <li class="nav-item"><button type="button" class="btn btn-outline-light">Top</button></li>
-                        <li class="nav-item"><button type="button" class="btn btn-outline-light">Bottom</button></li>
+                        <li class="nav-item"><button type="button" class="btn btn-outline-light" href="#thanks">Bottom</button></li>
                     </ul>
                 </div>
             </nav>
@@ -39,36 +39,36 @@
                 <span class="sr-only">Next</span>
             </a>
             <div>
-                <button type="button" class="btn btn-primary btn-lg gobottom">Go to bottom</button>
+                <a type="button" class="btn btn-primary btn-lg gobottom" href="thanks">Go to bottom</a>
             </div>
         </div> 
     </div> 
-    <div class="container-fluid page1">
-        <h2 class="text-center text-white p-5 h1"> PAGE 1<span class="font-weight-bold">CHECK FIELDS</span></h2>
-        <form class="m-3 p-3">
+    <div class="container-fluid page1" id="page1">
+        <h2 class="text-center text-white"> PAGE 1<span class="font-weight-bold">CHECK FIELDS</span></h2>
+        <form class="mx-5 p-5">
             <div class="form-row m-3">
                 <div class="form-group row col-sm-12 col-md-6 col-lg-4 p-3">
-                    <label for="inputEmail3" class="col-sm-12 col-md-7 col-lg-7 col-form-label font-weight-bold text-white p-3">Question1...</label>
-                    <div class="col-sm-12 col-md-5 col-lg-5 p-2">
-                        <select class="form-control" onchange="change();">
+                    <label for="inputEmail3" class="col-sm-12 col-md-6 col-lg-6 col-form-label font-weight-bold text-white p-3 my-2 text-uppercase">Question 1...</label>
+                    <div class="col-sm-12 col-md-6 col-lg-6 p-2">
+                        <select class="form-control text-uppercase font-weight-bold p-3" onchange="change();">
                             <option selected>Yes</option>
                             <option>No</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group row col-sm-12 col-md-6 col-lg-4 p-3">
-                    <label for="inputEmail3" class="col-sm-12 col-md-7 col-lg-7 col-form-label font-weight-bold text-white p-3">Question2...</label>
-                    <div class="col-sm-12 col-md-5 col-lg-5 p-2">
-                            <select class="form-control" onchange="change();">
+                    <label for="inputEmail3" class="col-sm-12 col-md-6 col-lg-6 col-form-label font-weight-bold text-white p-3 my-2 text-uppercase">Question 2...</label>
+                    <div class="col-sm-12 col-md-6 col-lg-6 p-2">
+                            <select class="form-control text-uppercase font-weight-bold p-3" onchange="change();">
                             <option selected>Yes</option>
                             <option>No</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group row col-sm-12 col-md-6 col-lg-4 p-3">
-                    <label for="inputEmail3" class="col-sm-12 col-md-7 col-lg-7 col-form-label font-weight-bold text-white p-3">Question3...</label>
-                    <div class="col-sm-12 col-md-5 col-lg-5 p-2">
-                        <select class="form-control" onchange="change();" >
+                    <label for="inputEmail3" class="col-sm-12 col-md-6 col-lg-6 col-form-label font-weight-bold text-white p-3 my-2 text-uppercase">Question 3...</label>
+                    <div class="col-sm-12 col-md-6 col-lg-6 p-2">
+                        <select class="form-control text-uppercase font-weight-bold p-3" onchange="change();" >
                             <option selected>Yes</option>
                             <option>No</option>
                         </select>
@@ -77,27 +77,27 @@
             </div>
             <div class="form-row m-3">
                 <div class="form-group row col-sm-12 col-md-6 col-lg-4 p-3">
-                    <label for="inputEmail3" class="col-sm-12 col-md-7 col-lg-7 col-form-label font-weight-bold text-white p-3">Question4...</label>
-                    <div class="col-sm-12 col-md-5 col-lg-5 p-2">
-                        <select class="form-control" onchange="change();" >
+                    <label for="inputEmail3" class="col-sm-12 col-md-6 col-lg-6 col-form-label font-weight-bold text-white p-3 my-2 text-uppercase">Question 4...</label>
+                    <div class="col-sm-12 col-md-6 col-lg-6 p-2">
+                        <select class="form-control text-uppercase font-weight-bold p-3" onchange="change();" >
                             <option selected>Yes</option>
                             <option>No</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group row col-sm-12 col-md-6 col-lg-4 p-3">
-                    <label for="inputEmail3" class="col-sm-12 col-md-7 col-lg-7 col-form-label font-weight-bold text-white p-3">Question5...</label>
-                    <div class="col-sm-12 col-md-5 col-lg-5 p-2">
-                        <select class="form-control" onchange="change();">
+                    <label for="inputEmail3" class="col-sm-12 col-md-6 col-lg-6 col-form-label font-weight-bold text-white p-3 my-2 text-uppercase">Question 5...</label>
+                    <div class="col-sm-12 col-md-6 col-lg-6 p-2">
+                        <select class="form-control text-uppercase font-weight-bold p-3" onchange="change();">
                             <option selected>Yes</option>
                             <option>No</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group row col-sm-12 col-md-6 col-lg-4 p-3">
-                    <label for="inputEmail3" class="col-sm-12 col-md-7 col-lg-7 col-form-label font-weight-bold text-white p-3">Question6...</label>
-                    <div class="col-sm-12 col-md-5 col-lg-5 p-2">
-                        <select class="form-control" onchange="change();">
+                    <label for="inputEmail3" class="col-sm-12 col-md-6 col-lg-6 col-form-label font-weight-bold text-white p-3 my-2 text-uppercase">Question 6...</label>
+                    <div class="col-sm-12 col-md-6 col-lg-6 p-2">
+                        <select class="form-control text-uppercase font-weight-bold p-3" onchange="change();">
                             <option selected>Yes</option>
                             <option>No</option>
                         </select>
@@ -105,66 +105,66 @@
                 </div>
             </div>
         </form>
-        <div>
-            <button type="button" class="btn btn-primary ">Go to bottom</button>
+        <div class="text-center">
+            <a type="button" class="btn btn-primary gobottom" href="#thanks">Go to bottom</a>
         </div>
     </div>
-    <div class="container-fluid page2">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="text-center text-white p-5">PAGE 2 <span class="font-weight-bold">TEXT</span> </h2>
+    <div class="container-fluid page2" id="page2">
+        <div class="row px-5 pt-5">
+            <div class="col-12 mb-5">
+                <h2 class="text-center text-white">PAGE 2 <span class="font-weight-bold">TEXT</span> </h2>
             </div>
-            <div class="col-sm-12 col-md-6">
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consectetur laboriosam in? Sapiente, expedita error amet iure repellendus asperiores doloribus quasi praesentium ad similique libero consectetur officiis earum rerum nihil.</p>
+            <div class="col-sm-12 col-md-6 pl-5 pt-5 pr-2">
+                <p class="text-white px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consectetur laboriosam in? Sapiente, expedita error amet iure repellendus asperiores doloribus quasi praesentium ad similique libero consectetur officiis earum rerum nihil.</p>
             </div>
-            <div class="col-sm-12 col-md-6">
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consectetur laboriosam in? Sapiente, expedita error amet iure repellendus asperiores doloribus quasi praesentium ad similique libero consectetur officiis earum rerum nihil.</p>
+            <div class="col-sm-12 col-md-6 pr-5 pt-5 pl-2">
+                <p class="text-white px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consectetur laboriosam in? Sapiente, expedita error amet iure repellendus asperiores doloribus quasi praesentium ad similique libero consectetur officiis earum rerum nihil.</p>
             </div>
-            <div class="col-sm-12 col-md-6">
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consectetur laboriosam in? Sapiente, expedita error amet iure repellendus asperiores doloribus quasi praesentium ad similique libero consectetur officiis earum rerum nihil.</p>
+            <div class="col-sm-12 col-md-6 pl-5 pt-2 pr-2">
+                <p class="text-white px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consectetur laboriosam in? Sapiente, expedita error amet iure repellendus asperiores doloribus quasi praesentium ad similique libero consectetur officiis earum rerum nihil.</p>
             </div>
-            <div class="col-sm-12 col-md-6">
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consectetur laboriosam in? Sapiente, expedita error amet iure repellendus asperiores doloribus quasi praesentium ad similique libero consectetur officiis earum rerum nihil.</p>
+            <div class="col-sm-12 col-md-6 pr-5 pt-2 pl-2">
+                <p class="text-white px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consectetur laboriosam in? Sapiente, expedita error amet iure repellendus asperiores doloribus quasi praesentium ad similique libero consectetur officiis earum rerum nihil.</p>
             </div>
         </div>
-        <div>
-            <button type="button" class="btn btn-primary">Go To Bottom</button>
+        <div class="text-center">
+            <a type="button" class="btn btn-primary gobottom" href="#thanks">Go To Bottom</a>
         </div>
     </div>
-    <div class="container-fluid page3">
+    <div class="container-fluid page3" id="page3">
         <div class="col-12">
-            <h2 class="text-center text-white p-5">PAGE 3 <span class="font-weight-bold">JUST IMAGES</span> </h2>
+            <h2 class="text-center text-white">PAGE 3 <span class="font-weight-bold">JUST IMAGES</span> </h2>
         </div>
-        <div class="card-deck p-5">
-            <div class="card">
+        <div class="card-deck mx-5 p-5">
+            <div class="card border-0 rounded-0">
                 <img class="card-img-top" src="images/card-1.png" alt="Card image cap">
                 <div class="card-body">
-                    <h6 class="card-title text-center text-link">SO NICE</h5>
+                    <h6 class="card-title text-center text-muted">SO NICE</h5>
                 </div>
             </div>
-            <div class="card">
+            <div class="card border-0 rounded-0">
                 <img class="card-img-top" src="images/card-2.png" alt="Card image cap">
                 <div class="card-body">
-                    <h6 class="card-title text-center text-link">SO COOL</h5>
+                    <h6 class="card-title text-center text-muted">SO COOL</h5>
                 </div>
             </div>
-            <div class="card">
+            <div class="card border-0 rounded-0">
                 <img class="card-img-top" src="images/card-3.png" alt="Card image cap">
                 <div class="card-body">
-                    <h6 class="card-title text-center text-link">SO PACEFUL</h5>
+                    <h6 class="card-title text-center text-muted">SO PACEFUL</h5>
                 </div>
             </div>
         </div>
-        <div>
-            <button type="button" class="btn btn-primary">Go To Bottom</button>
+        <div class="text-center">
+            <a type="button" class="btn btn-primary gobottom" href="#thanks">Go To Bottom</a>
         </div>
     </div>
-    <div class="container-fluid thanks">
+    <div class="container-fluid thanks text-center" id="thanks">
         <div class="col-12">
-            <h2 class="text-center text-white p-5">THANK <span class="font-weight-bold">YOU</span> </h2>
+            <h2 class="text-center text-white">THANK <span class="font-weight-bold">YOU</span> </h2>
         </div>
         <div>
-            <button type="button" class="btn btn-primary">Go To Bottom</button>
+            <a type="button" class="btn btn-primary gobottom" href="#header">Go to header</a>
         </div>
     </div>
 

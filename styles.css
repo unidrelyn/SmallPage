@@ -1,5 +1,20 @@
+h2 {
+    font-size: 50px;
+    padding: 120px 0 20px;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+.gobottom {
+    background: #4a2985;
+    border: 1px solid #4a2985;
+    font-size: 14px;
+    font-weight: bold;
+    height: 55px;
+    width: 230px;
+    padding: 15px;
 }
 
 .top-header {
@@ -29,53 +44,73 @@ body {
 
 .carousel .carousel-inner h2 {
     position: absolute;
-    top: -300px;
-    right: 40%;
+    top: -500px;
+    right: 37%;
 }
 
 .carousel .carousel-inner p {
     position: absolute;
-    top: -200px;
+    top: -300px;
 }
 
-.gobottom {
-    background: #4a2985;
-    border: 1px solid #4a2985;
+.carousel .gobottom {
     position: absolute;
-    right: 43%;
     bottom: 45px;
-    font-size: 14px;
-    font-weight: bold;
-    height: 50px;
-    width: 170px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
 }
 
 .page1 {
-    height: 600px;
-    background: #46267e;
+    height: 750px;
+    background: #502c91;
 }
 
 .page1 .form-control {
     height: 60px;
 }
 
-.page1 .gobottom{
-    bottom: 0;
-}
-
 .page2 {
-    height: 600px;
-    background: #392264;
+    height: 750px;
+    background: #442f7c;
 }
 
 
 
 .page3 {
-    height: 600px;
-    background: #2e1755;
+    height: 750px;
+    background: #3b1d6e;
 }
 
 .thanks {
-    height: 600px;
+    height: 750px;
     background: #46267e; 
 }
+
+.thanks .gobottom {
+    margin-top: 30%;
+}
+
+@media (max-width: 738px) {
+    h2 {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+    .page1,
+    .page2 {
+        height: auto;
+    }
+
+    .gobottom {
+        margin-bottom: 20px;
+    }
+
+    .carousel .carousel-inner p {
+        top: -194px;
+    }
+
+    .carousel .carousel-inner h2 {
+        top: -395px;
+    }
+ }
