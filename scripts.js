@@ -29,13 +29,11 @@ request.onload = function () {
             image.setAttribute('src', data[key].image);
             image.setAttribute('class', 'd-block w-130 img-fluid');
             image.setAttribute('alt', 'Responsive image');
-
             
             carouselItem.appendChild(carouselCaption);
             carouselCaption.appendChild(title);
             carouselCaption.appendChild(text);
             carouselItem.appendChild(image);
-
         }
     } else {
         console.log('error');
@@ -43,3 +41,22 @@ request.onload = function () {
 }
 
 request.send();
+
+//function for compare the answers
+
+function change() {
+    var select = document.getElementsByTagName('select');
+
+    for (var i = 0; i < select.length; i++) {
+
+        var index = select[i].selectedIndex;
+        var answer = document.getElementsByTagName('option')[index].value;
+
+        if (answer=='Yes'){
+            console.log('True');
+            break;
+        } else if (i == (select.length-1)) {
+            console.log('False');
+        }
+    }
+}

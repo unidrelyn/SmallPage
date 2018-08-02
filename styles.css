@@ -2,11 +2,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.top-header {
+    padding: 0;
+}
+
 .header {
     position: absolute;
     z-index: 100;
     width: 98%;
-    margin: 40px 0px;
+    margin: 40px 0;
 }
 
 .header .navbar li {
@@ -19,7 +23,59 @@ body {
 }
 
 .header .navbar .btn {
-    height: 40px;
     font-size: 14px;
     width: 140px;
+}
+
+.carousel .carousel-inner h2 {
+    position: absolute;
+    top: -300px;
+    right: 40%;
+}
+
+.carousel .carousel-inner p {
+    position: absolute;
+    top: -200px;
+}
+
+.gobottom {
+    background: #4a2985;
+    border: 1px solid #4a2985;
+    position: absolute;
+    right: 43%;
+    bottom: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 50px;
+    width: 170px;
+}
+
+.page1 {
+    height: 600px;
+    background: #46267e;
+}
+
+.page1 .form-control {
+    height: 60px;
+}
+
+.page1 .gobottom{
+    bottom: 0;
+}
+
+.page2 {
+    height: 600px;
+    background: #392264;
+}
+
+
+
+.page3 {
+    height: 600px;
+    background: #2e1755;
+}
+
+.thanks {
+    height: 600px;
+    background: #46267e; 
 }
